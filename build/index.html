@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillz</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="burger-container">
+            <input id="menu-toggle" type="checkbox"/>
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu-box">
+                <li><a class="menu-item" href="#courses">Courses</a></li>
+                <li><a class="menu-item" href="#workshops">Free Workshops</a></li>
+                <li><a class="menu-item" href="#blog">Blog</a></li>
+                <li><a class="menu-item" href="#about">About</a></li>
+                <li><a class="menu-item" href="#form">Contact</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <div class="logo-icon">
+                <svg class="drop1" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                          fill="#57D9A6"/>
+                </svg>
+                <svg class="drop2" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                          fill="#57D9A6"/>
+                </svg>
+                <svg class="drop3" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                          fill="#57D9A6"/>
+                </svg>
+                <svg class="drop4" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                          fill="#57D9A6"/>
+                </svg>
+            </div>
+            <img src="src/img/logo-name.png" alt="" class="logo-name">
+        </div>
+        <ul class="menu">
+            <li class="menu-item"><a href="#courses">Courses</a></li>
+            <li class="menu-item"><a href="#workshops">Free Workshops</a></li>
+            <li class="menu-item"><a href="#blog">Blog</a></li>
+            <li class="menu-item"><a href="#about">About</a></li>
+            <li class="menu-item"><a href="#form">Contact</a></li>
+        </ul>
+
+        <a href="#" class="basket">
+            <svg width="32" height="32" class="icon">
+                <use xlink:href="src/sprite-icons.svg#basket"></use>
+            </svg>
+            <div class="counter">0</div>
+        </a>
+    </div>
+</header>
+
+<section class="home">
+    <div class="homeText">
+        <p>Featured Course</p>
+        <h2 class="course-title">
+            Run your own online learning platform
+        </h2>
+        <p class="home-desc">
+            A deep-dive on the Instagram algorythm, hashtags, content strategy, and branding.
+        </p>
+        <p><span>Kathryn Murphy</span></p>
+        <button class="button">Learn more</button>
+    </div>
+    <div class="home-image">
+        <img src="src/img/waves.png" alt="" class="waves">
+        <img src="src/img/home-img.png" alt="" class="home-img">
+        <div class="drop" id="d1"></div>
+        <div class="drop" id="d2"></div>
+        <div class="drop" id="d3"></div>
+    </div>
+</section>
+
+<section class="courses" id="courses">
+    <h3>Featured Courses</h3>
+    <div class="line"></div>
+    <p class="course-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+        vitae erat.</p>
+    <button class="button">View all courses</button>
+    <div class="card-container">
+        <div class="course-card">
+            <img src="src/img/course1.png" alt="">
+            <div class="course-desc">
+                <h4>How to Increase Your Engagement on Instagram</h4>
+                <p class="author">Katie Murphy</p>
+                <p class="price">$ 59.99 USD</p>
+                <a href="#" class="link">Learn more</a>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="src/img/course2.png" alt="">
+            <div class="course-desc">
+                <h4>Business 101: Setting up Your Taxes</h4>
+                <p class="author">Bessie Cooper</p>
+                <p class="price"><span>$ 69.99 USD</span>$ 39.99 USD</p>
+                <a href="#" class="link">Learn more</a>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="src/img/course3.png" alt="">
+            <div class="course-desc">
+                <h4>iPhone Photography: Tips, Tricks and Best Practices</h4>
+                <p class="author">Dianne Russell</p>
+                <p class="price"><span>$ 69.99 USD</span>$ 39.99 USD</p>
+                <a href="#" class="link">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="scroller">
+        <div class="card-container scroll-container">
+            <div class="course-card scroll-item">
+                <img src="src/img/course1.png" alt="">
+                <div class="course-desc">
+                    <h4>How to Increase Your Engagement on Instagram</h4>
+                    <p class="author">Katie Murphy</p>
+                    <p class="price">$ 59.99 USD</p>
+                    <a href="#" class="link">Learn more</a>
+                </div>
+            </div>
+            <div class="course-card scroll-item">
+                <img src="src/img/course2.png" alt="">
+                <div class="course-desc">
+                    <h4>Business 101: Setting up Your Taxes</h4>
+                    <p class="author">Bessie Cooper</p>
+                    <p class="price"><span>$ 69.99 USD</span>$ 39.99 USD</p>
+                    <a href="#" class="link">Learn more</a>
+                </div>
+            </div>
+            <div class="course-card scroll-item">
+                <img src="src/img/course3.png" alt="">
+                <div class="course-desc">
+                    <h4>iPhone Photography: Tips, Tricks and Best Practices</h4>
+                    <p class="author">Dianne Russell</p>
+                    <p class="price"><span>$ 69.99 USD</span>$ 39.99 USD</p>
+                    <a href="#" class="link">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <span class="btn prev">&lt;</span>
+        <span class="btn next">&gt;</span>
+    </div>
+</section>
+
+<section class="recommendations">
+    <div class="recommend">
+        <img src="src/img/rec.png" alt="">
+    </div>
+    <div class="rec-text">
+        <h3>Get personalized learning recommendations</h3>
+        <div class="line"></div>
+        <p class="recommend-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+            luctus venenatis, lectus magna fringilla urnaLorem ipsum dolor sit amet.</p>
+        <button class="button">Contact us</button>
+    </div>
+</section>
+
+<section class="workshops" id="workshops">
+    <h3>Upcoming free workshops</h3>
+    <div class="line"></div>
+    <p class="workshop-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+        vitae erat.</p>
+    <button class="button">View all workshops</button>
+    <!--    <div class="card-container">-->
+    <!--        <div class="work-card">-->
+    <!--            <h4>Photography Basic</h4>-->
+    <!--            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus-->
+    <!--                venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum-->
+    <!--                facilisis leo.</p>-->
+    <!--            <a href="#" class="link">Learn more</a>-->
+    <!--        </div>-->
+    <!--        <div class="work-card">-->
+    <!--            <h4>Business 101</h4>-->
+    <!--            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus-->
+    <!--                venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum-->
+    <!--                facilisis leo.</p>-->
+    <!--            <a href="#" class="link">Learn more</a>-->
+    <!--        </div>-->
+    <!--        <div class="work-card">-->
+    <!--            <h4>Social Networking Camp</h4>-->
+    <!--            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus-->
+    <!--                venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum-->
+    <!--                facilisis leo.</p>-->
+    <!--            <a href="#" class="link">Learn more</a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="slider-wrapper">
+            <div class="slider-items card-container">
+                <div class="slider-item work-card">
+                    <h4>Photography Basic</h4>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                        luctus
+                        venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+                        elementum
+                        facilisis leo.</p>
+                    <a href="#" class="link">Learn more</a>
+                </div>
+                <div class="slider-item work-card">
+                    <h4>Business 101</h4>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                        luctus
+                        venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+                        elementum
+                        facilisis leo.</p>
+                    <a href="#" class="link">Learn more</a>
+                </div>
+                <div class="slider-item work-card">
+                    <h4>Social Networking Camp</h4>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                        luctus
+                        venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+                        elementum
+                        facilisis leo.</p>
+                    <a href="#" class="link">Learn more</a>
+                </div>
+            </div>
+            <button class="slider btn prev"><</button>
+            <button class="slider btn next">></button>
+    </div>
+</section>
+
+<section class="feedback">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide feed-screen">
+                <div class="stars">
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                </div>
+                <div class="feed-text">“Kate’s courses are a game changer. She’s thorough, organized, and explains
+                    things in a no-nonsense way that makes it easy for anyone—beginners to experts—to learn something
+                    from her
+                    courses and take their game to the next level.”
+                </div>
+                <p>James Brown, Influencer</p>
+            </div>
+
+            <div class="swiper-slide feed-screen">
+                <div class="stars">
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                    <svg width="32" height="29" opacity="0.4" viewBox="0 0 32 29" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.0012207L19.5922 11.0569H31.2169L21.8123 17.8898L25.4046 28.9455L16 22.1127L6.59543 28.9455L10.1877 17.8898L0.783081 11.0569H12.4078L16 0.0012207Z"
+                              fill="#1C1C33"/>
+                    </svg>
+                </div>
+                <div class="feed-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                    amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+                    elementum facilisis leo.”
+                </div>
+                <p>Jordan Black, Influencer</p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="about-image">
+        <img src="src/img/waves.png" alt="" class="waves">
+        <img src="src/img/about.png" alt="" class="home-img">
+        <div class="drop" id="a1"></div>
+        <div class="drop" id="a2"></div>
+        <div class="drop" id="a3"></div>
+    </div>
+    <div class="about-desc">
+        <h3>A passion for teaching</h3>
+        <div class="line"></div>
+        <p class="about-text">A deep-dive on the Instagram algorythm, hashtags,
+            content strategy, and branding.</p>
+        <button class="button">About Skillz</button>
+    </div>
+</section>
+
+<section class="articles" id="blog">
+    <h3>Recent articles</h3>
+    <div class="line"></div>
+    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+        vitae erat.</p>
+    <button class="button">View all articles</button>
+    <div class="card-container">
+        <a href="#" class="blog">
+            <div class="blog-card">
+                <img src="src/img/art1-2.png" alt="">
+                <p class="span">February 8, 2021</p>
+                <p class="text">The TikTok Algorithm: How to Get the Best Engagement</p>
+                <p class="span">Dianne Russell</p>
+            </div>
+        </a>
+        <a href="#" class="blog">
+            <div class="blog-card">
+                <img src="src/img/art1-2.png" alt="">
+                <p class="span">February 8, 2021</p>
+                <p class="text">How to Win Friends and Influence People</p>
+                <p class="span">Marvin McKinney</p>
+            </div>
+        </a>
+        <a href="#" class="blog">
+            <div class="blog-card">
+                <img src="src/img/art3.png" alt="">
+                <p class="span">January 31, 2021</p>
+                <p class="text">iPhone Photography: Tips, Tricks, and Best Practices</p>
+                <p class="span">Katie Murphy</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="form" id="form">
+    <div class="email-form">
+        <h3>You have the power to define your future.</h3>
+        <input class="email" type="email" placeholder="email address">
+        <button class="button">submit</button>
+    </div>
+</section>
+
+<section class="site-map">
+    <div class="logo">
+        <div class="logo-icon">
+            <svg class="drop1" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                      fill="#57D9A6"/>
+            </svg>
+            <svg class="drop2" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                      fill="#57D9A6"/>
+            </svg>
+            <svg class="drop3" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                      fill="#57D9A6"/>
+            </svg>
+            <svg class="drop4" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.0287 10.0072C20.0287 4.49958 15.5418 0.0288086 10.0143 0.0288086H0L4.36482e-07 10.0072C6.77401e-07 15.5149 4.48686 19.9857 10.0143 19.9857C15.5418 19.9857 20.0287 15.5149 20.0287 10.0072Z"
+                      fill="#57D9A6"/>
+            </svg>
+        </div>
+        <img src="src/img/logo-name.png" alt="" class="logo-name">
+    </div>
+    <div class="map-list">
+        <ul class="map"> Learning platform
+            <li class="map-item"><a href="#" class="item">Home</a></li>
+            <li class="map-item"><a href="#courses" class="item">Courses</a></li>
+            <li class="map-item"><a href="#workshops" class="item">Free Workshops</a></li>
+            <li class="map-item"><a href="#blog" class="item">Blog</a></li>
+            <li class="map-item"><a href="#about" class="item">About</a></li>
+            <li class="map-item"><a href="#form" class="item">Contact</a></li>
+        </ul>
+        <ul class="map"> Template
+            <li class="map-item"><a href="#" class="item">Instructions</a></li>
+            <li class="map-item"><a href="#" class="item">Style Guide</a></li>
+            <li class="map-item"><a href="#" class="item">Licenses</a></li>
+            <li class="map-item"><a href="#" class="item">Changelog</a></li>
+        </ul>
+
+        <div class="social-list">Follow skillz
+            <div class="social">
+                <a href="https://www.tiktok.com/" target="_blank" class="social-item">
+                    <svg width="21" height="24" class="icon">
+                        <use xlink:href="src/sprite-icons.svg#tiktok"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-item">
+                    <svg width="24" height="24" class="icon">
+                        <use xlink:href="src/sprite-icons.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="social-item">
+                    <svg width="24" height="24" class="icon" style="margin-top: 3px">
+                        <use xlink:href="src/sprite-icons.svg#youtube"></use>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="social-item">
+                    <svg width="12" height="24" class="icon">
+                        <use xlink:href="src/sprite-icons.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="social-item">
+                    <svg width="24" height="24" class="icon" style="margin-top: 2px">
+                        <use xlink:href="src/sprite-icons.svg#twitter"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>© Skillz Template</p>
+    <p>Powered by Webflow</p>
+</footer>
+<script src="js/swiper.min.js"></script>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
