@@ -1,0 +1,40 @@
+File from: [app/src/img/home-img.png]
+
+File to: [build/src/img/home-img.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/home-img.png app/src/img/home-img.png
+  error: failed writing image to build/src/img/home-img.png (16)
+File from: [app/src/img/rec.png]
+
+File to: [build/src/img/rec.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/rec.png app/src/img/rec.png
+  error: failed writing image to build/src/img/rec.png (16)
+File from: [app/src/img/course3.png]
+
+File to: [build/src/img/course3.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/course3.png app/src/img/course3.png
+  error: failed writing image to build/src/img/course3.png (16)
+File from: [app/src/img/art3.png]
+
+File to: [build/src/img/art3.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/art3.png app/src/img/art3.png
+  error: failed writing image to build/src/img/art3.png (16)
+File from: [app/src/img/course1.png]
+
+File to: [build/src/img/course1.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/course1.png app/src/img/course1.png
+  error: failed writing image to build/src/img/course1.png (16)

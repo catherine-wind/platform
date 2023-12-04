@@ -1,0 +1,8 @@
+File from: [app/src/home-img.png]
+
+File to: [build/src/dest/home-img.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/dest/home-img.png app/src/home-img.png
+  error: failed writing image to build/src/dest/home-img.png (16)

@@ -1,0 +1,8 @@
+File from: [app/src/rec.png]
+
+File to: [build/src/rec.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/rec.png app/src/rec.png
+  error: 'build\src\rec.png' exists; not overwriting

@@ -1,0 +1,24 @@
+File from: [app/src/img/rec.png]
+
+File to: [build/src/img/rec.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/rec.png app/src/img/rec.png
+  error: 'build\src\img\rec.png' exists; not overwriting
+File from: [app/src/img/home-img.png]
+
+File to: [build/src/img/home-img.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/home-img.png app/src/img/home-img.png
+  error: 'build\src\img\home-img.png' exists; not overwriting
+File from: [app/src/img/course1.png]
+
+File to: [build/src/img/course1.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/course1.png app/src/img/course1.png
+  error: 'build\src\img\course1.png' exists; not overwriting

@@ -1,0 +1,24 @@
+File from: [app/src/img/course2.png]
+
+File to: [build/src/img/course2.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/course2.png app/src/img/course2.png
+  error: failed writing image to build/src/img/course2.png (16)
+File from: [app/src/img/logo-name.png]
+
+File to: [build/src/img/logo-name.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/logo-name.png app/src/img/logo-name.png
+  error: 'build/src/img/logo-name.png' exists; not overwriting
+File from: [app/src/img/waves.png]
+
+File to: [build/src/img/waves.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\work\platform\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o build/src/img/waves.png app/src/img/waves.png
+  error: failed writing image to build/src/img/waves.png (16)
