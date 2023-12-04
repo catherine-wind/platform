@@ -1,0 +1,94 @@
+@import "general";
+
+.recommendations {
+  display: flex;
+  background: $darkBG;
+  align-items: center;
+
+  .recommend {
+    max-width: 720px;
+    flex-basis: 50%;
+    line-height: 0;
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 480px) {
+     display: none;
+    }
+  }
+
+  .rec-text {
+    flex-basis: 50%;
+    padding: 142px 2% 144px 4%;
+    @media (max-width: 1220px) {
+      padding: 100px 2% 101px 4%;
+    }
+    @media (max-width: 1024px) {
+      padding: 79px 2% 79px 4%;
+    }
+    @media (max-width: 768px) {
+      padding: 60px 2% 60px 4%;
+    }
+    @media (max-width: 480px) {
+      flex-basis: 100%;
+    }
+
+
+    h3 {
+      @include heading;
+      margin-bottom: 16px;
+      @media (max-width: 1220px) {
+        font-size: 42px;
+        line-height: 46px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 38px;
+        line-height: 43px;
+      }
+      @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+    }
+
+    .line {
+      @include line;
+
+    }
+
+    .recommend-text {
+      @include text;
+      margin-top: 50px;
+      @media (max-width: 1024px) {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      @media (max-width: 768px) {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      @media (max-width: 480px) {
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+    }
+
+    .button {
+      margin-top: 46px;
+      @media (max-width: 1024px) {
+        margin-top: 38px;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 12px 18px;
+        margin-top: 30px;
+      }
+
+    }
+  }
+}

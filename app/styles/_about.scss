@@ -1,0 +1,112 @@
+@import "general";
+
+.about {
+  background: $darkBG;
+  display: flex;
+  justify-content: space-between;
+  padding: 109px 0 88px 82px;
+  gap: 5%;
+  @media screen and (max-width: 1024px) {
+    gap: 3%;
+    padding: 80px 20px 66px 58px;
+  }
+
+  .about-image {
+    align-self: center;
+    position: relative;
+    flex-basis: 47%;
+
+    img {
+      position: absolute;
+      max-width: 100%;
+
+      &.home-img {
+        position: relative;
+        margin-top: 35px;
+        z-index: 3;
+      }
+
+      &.waves {
+        bottom: 10px;
+        left: 15%;
+        z-index: 2;
+        max-width: 60%;
+      }
+    }
+
+    .drop {
+      position: absolute;
+    }
+
+  }
+
+  .about-desc {
+    flex-basis: 47%;
+    h3 {
+      @include heading;
+      margin-top: 154px;
+      margin-bottom: 17px;
+    }
+
+    .line {
+      @include line;
+    }
+
+    .about-text {
+      @include text;
+      margin-top: 50px;
+    }
+
+    .button {
+      margin-top: 46px;
+    }
+  }
+}
+
+#a1 {
+  box-shadow: 14px 14px 20px rgba($darkBG, 0.5);
+  border-radius: 999px 56px 999px 999px;
+  background: $azure;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 83px;
+  z-index: 5;
+  @media screen and (max-width: 1024px) {
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 73px;
+  }
+}
+
+#a2 {
+  box-shadow: 14px 14px 20px rgba($darkBG, 0.5);
+  border-radius: 56px 999px 999px 999px;
+  background: $azure;
+  width: 120px;
+  height: 120px;
+  z-index: 4;
+  top: 44px;
+  left: 0;
+  @media screen and (max-width: 1024px) {
+    width: 98px;
+    height: 98px;
+    left:-5px;
+  }
+}
+
+#a3 {
+  box-shadow: 14px 14px 20px rgba($darkBG, 0.5);
+  border-radius: 999px 32px 999px 999px;
+  background: $azure;
+  width: 375px;
+  height: 375px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  @media screen and (max-width: 1024px) {
+    width: 290px;
+    height: 290px;
+  }
+}

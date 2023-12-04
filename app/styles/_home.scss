@@ -1,0 +1,462 @@
+@import "general";
+
+.container {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5.7%;
+  @media (max-width: 768px) {
+    padding: 22px 0;
+  }
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  .logo-icon {
+    display: flex;
+    max-width: 40px;
+    max-height: 45px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 18px;
+
+    svg {
+      flex-basis: 50%;
+    }
+  }
+}
+
+header {
+  background-color: $darkBG;
+  @media (max-width: 700px) {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 40px;
+    align-content: center;
+    @media (max-width: 1024px) {
+      gap: 30px;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+    @media (max-width: 700px) {
+      display: none;
+    }
+
+    .menu-item {
+
+      a {
+        text-decoration: none;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+
+        &:hover {
+          color: $azure;
+        }
+      }
+    }
+  }
+
+  .basket {
+    position: relative;
+    max-height: 32px;
+
+    .counter {
+      position: absolute;
+      top: -7px;
+      right: -8px;
+      background-color: $red;
+      border-radius: 9px;
+      font-size: 11px;
+      line-height: 18px;
+      padding: 0 6px;
+    }
+  }
+
+}
+
+.drop2 {
+  transform: rotateY(180deg);
+}
+
+.drop3 {
+  transform: rotateX(180deg);
+}
+
+.drop4 {
+  transform: rotate(180deg);
+}
+
+.home {
+  background: $blueBG;
+  padding: 145px 24px 137px 0;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1220px) {
+    gap: 5%;
+  }
+  @media (max-width: 1024px) {
+    padding: 100px 24px 95px 0;
+    gap: 5%;
+  }
+  @media (max-width: 768px) {
+    padding: 70px 24px 65px 0;
+  }
+  @media (max-width: 700px) {
+    padding: 120px 24px 65px 0;
+  }
+  @media (max-width: 480px) {
+    display: block;
+    padding: 120px 0 60px;
+  }
+
+  .homeText {
+    flex-basis: 50%;
+    margin-left: 5.7%;
+    @media (max-width: 1220px) {
+      flex-basis: 45%;
+    }
+    @media (max-width: 480px) {
+      margin-right: 5.7%;
+    }
+
+    p {
+      @include text;
+      margin: 22px 0;
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 17px;
+        line-height: 27px;
+        color: #B2B2BF;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin: 10px 0;
+        }
+        @media (max-width: 480px) {
+          display: block;
+          text-align: right;
+        }
+      }
+
+      &:first-child {
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+        border-bottom: solid 2px $azure;
+        display: inline;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    margin: 68px 0 22px;
+    @media (max-width: 1220px) {
+      font-size: 50px;
+      line-height: 55px;
+      margin: 55px 0 22px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 46px;
+      line-height: 52px;
+      margin: 48px 0 22px;
+    }
+    @media (max-width: 768px) {
+     @include heading;
+        margin: 44px 0 22px;
+    }
+  }
+
+  .home-image {
+    flex-basis: 50%;
+    position: relative;
+    max-width: 615px;
+    margin-top: 15px;
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 60px;
+      flex-basis: 45%;
+    }
+    @media (max-width: 480px) {
+      display: block;
+      margin: 80px 10% 0 15%;
+    }
+
+    .home-img {
+      position: relative;
+      z-index: 2;
+      max-width: 100%;
+    }
+
+    .waves {
+      position: absolute;
+      z-index: 1;
+      top: -41px;
+      left: -48px;
+      max-width: 60%;
+      @media (max-width: 1024px) {
+        top: -36px;
+      }
+      @media (max-width: 768px) {
+        top: -28px;
+        left: -38px;
+      }
+      @media (max-width: 700px) {
+        top: -28px;
+        left: -30px;
+      }
+      @media (max-width: 480px) {
+        top: -20px;
+        left: -38px;
+      }
+    }
+
+    .drop {
+      background: $azure;
+      box-shadow: 14px 14px 20px rgba(28, 28, 51, 0.5);
+      position: absolute;
+    }
+
+  }
+}
+
+#d1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 56px 999px 999px 999px;
+  top: -53px;
+  left: 40%;
+  z-index: 3;
+  @media (max-width: 1220px) {
+    width: 90px;
+    height: 90px;
+    top: -49px;
+  }
+  @media (max-width: 1024px) {
+    width: 80px;
+    height: 80px;
+    top: -45px;
+  }
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+    top: -40px;
+  }
+  @media (max-width: 700px) {
+    width: 55px;
+    height: 55px;
+    top: -35px;
+  }
+  @media (max-width: 670px) {
+    width: 50px;
+    height: 50px;
+    top: -35px;
+  }
+  @media (max-width: 480px) {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 45%;
+  }
+
+}
+
+#d2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 999px 56px 999px 999px;
+  top: -50px;
+  left: 62%;
+  z-index: 3;
+  @media (max-width: 1220px) {
+    width: 130px;
+    height: 130px;
+    top: -47px;
+  }
+  @media (max-width: 1024px) {
+    width: 110px;
+    height: 110px;
+    top: -43px;
+  }
+  @media (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+    top: -34px;
+  }
+  @media (max-width: 700px) {
+    width: 80px;
+    height: 80px;
+    top: -35px;
+  }
+  @media (max-width: 670px) {
+    width: 60px;
+    height: 60px;
+    top: -35px;
+  }
+  @media (max-width: 480px) {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+    left: 67%;
+  }
+}
+
+#d3 {
+  width: 375px;
+  height: 375px;
+  border-radius: 999px 56px 999px 999px;
+  top: 203px;
+  right: 0;
+  z-index: 3;
+  @media (max-width: 1220px) {
+    width: 290px;
+    height: 290px;
+    top: 160px;
+  }
+  @media (max-width: 1024px) {
+    width: 245px;
+    height: 245px;
+    top: 120px;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+    top: 110px;
+  }
+  @media (max-width: 700px) {
+    width: 180px;
+    height: 180px;
+    top: 110px;
+  }
+  @media (max-width: 670px) {
+    width: 160px;
+    height: 160px;
+    top: 110px;
+  }
+  @media (max-width: 480px) {
+    width: 190px;
+    height: 190px;
+    top: 115px;
+    right: -10px;
+  }
+  @media (max-width: 380px) {
+    width: 160px;
+    height: 160px;
+    top: 90px;
+  }
+}
+
+
+.burger-container {
+  display: none;
+  @media (max-width: 700px) {
+    display: block;
+  }
+  .menu-box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: $darkBG;
+    z-index: 4;
+
+    .menu-item {
+      display: block;
+      padding: 12px 24px;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: $azure;
+      }
+    }
+
+
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding-bottom: 18px;
+    top: 40px;
+    left: 5.7%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 5;
+
+    &:hover {
+      color: $azure;
+    }
+  }
+
+  .menu-btn > span,
+  .menu-btn > span::before,
+  .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+
+  .menu-btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu-btn > span::after {
+    content: '';
+    top: 8px;
+  }
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .menu-box {
+  visibility: visible;
+  left: 0;
+}
+
+#menu-toggle {
+  visibility: hidden;
+}

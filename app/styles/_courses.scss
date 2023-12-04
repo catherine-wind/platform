@@ -1,0 +1,159 @@
+@import "general";
+
+.courses {
+  text-align: center;
+  background: $blueBG;
+  padding: 142px 5.7% 153px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 1024px) {
+    padding: 100px 5.7% 95px;
+  }
+  @media (max-width: 768px) {
+    padding: 70px 5.7% 95px;
+  }
+
+  h3 {
+    @include heading;
+    margin: 0 0 17px;
+  }
+
+  .line {
+    @include line;
+  }
+
+  p {
+    @include text;
+    max-width: 645px;
+    margin: 50px 0 0;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      max-width: 450px;
+    }
+  }
+
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    overflow: hidden;
+
+    @media (max-width: 874px) {
+      display: none;
+    }
+
+    &.scroll-container {
+      display: none;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+        @media (max-width: 874px) {
+          display: flex;
+        }
+
+    }
+
+    .course-card {
+      background: white;
+      text-align: left;
+      flex-basis: 31%;
+      position: relative;
+
+      &.scroll-item {
+        min-width: 300px;
+        margin: 0 5.7% 0 0;
+        scroll-snap-align: center;
+      }
+
+      &:hover {
+        box-shadow: 10px 10px 20px rgba($azure, 0.5);
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .course-desc {
+        padding-bottom: 50px;
+
+        h4 {
+          font-size: 24px;
+          line-height: 29px;
+          margin: 22px 24px 0;
+          color: $darkBG;
+          font-weight: 400;
+          @media (max-width: 936px) {
+            font-size: 22px;
+            line-height: 27px;
+          }
+        }
+
+        p {
+          color: $darkBG;
+          margin: 15px 24px 16px;
+          @media (max-width: 936px) {
+            font-size: 19px;
+            line-height: 24px;
+          }
+
+          &.author {
+            font-size: 17px;
+            @include span;
+            margin: 8px 24px 0;
+          }
+
+          span {
+            color: #B2B2BF;
+            margin-right: 10px;
+          }
+        }
+
+        .link {
+          @include link;
+          margin: 0 24px;
+          position: absolute;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+.scroller {
+  position: relative;
+  max-width: 100%;
+
+  .btn {
+    display: none;
+    position: absolute;
+    background-color: $darkBG;
+    color: white;
+    font-size: 36px;
+    padding: 12px 21px;
+    border-radius: 50%;
+    line-height: 100%;
+    margin: 0;
+    top: 50%;
+    z-index: 1;
+    @media (max-width: 874px) {
+      display: block;
+    }
+
+    &:hover {
+      color: $azure;
+      cursor: pointer;
+    }
+
+    &.prev {
+      left: 15px;
+    }
+
+    &.next {
+      right: 15px;
+    }
+  }
+}

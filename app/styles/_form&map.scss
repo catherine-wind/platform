@@ -1,0 +1,150 @@
+@import "general";
+
+.form {
+  background: $darkBG;
+  position: relative;
+  height: 174px;
+
+  .email-form {
+    position: absolute;
+    bottom: 0;
+    background: $azure;
+    height: 374px;
+    margin: 0 6%;
+    width: 88%;
+    text-align: center;
+
+    h3 {
+      @include heading;
+      color: $darkBG;
+      margin: 78px auto 57px;
+      text-transform: none;
+    }
+
+    .email {
+      border: 1px solid $darkBG;
+      border-radius: 4px;
+      background: none;
+      padding: 17px 220px 17px 20px;
+      color: $darkBG;
+      font-weight: 700;
+      font-size: 20px;
+
+      &::placeholder {
+        color: $darkBG;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 53px;
+      }
+
+      &:focus {
+        border: solid $darkBG 3px;
+      }
+    }
+
+    .button {
+      margin: 0 0 0 16px;
+      background: $darkBG;
+      color: $azure;
+    }
+  }
+}
+
+.site-map {
+  background: $darkBG;
+  padding-bottom: 144px;
+
+  .logo {
+    padding: 146px 82px 82px;
+    @media (max-width: 1024px) {
+      padding: 100px 6% 68px;
+    }
+  }
+
+  .map-list {
+    display: flex;
+    margin: 0 82px;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      margin: 0 6%;
+    }
+    ul {
+      list-style: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $textGrey;
+      padding: 0;
+      margin: 0;
+      flex-basis: 20%;
+
+      .map-item {
+        @include span;
+        color: $textGrey;
+        text-transform: none;
+        margin-top: 16px;
+
+        &:first-child {
+          margin-top: 23px;
+        }
+
+        .item {
+          text-decoration: none;
+
+          &:hover {
+            color: $azure;
+          }
+        }
+      }
+
+
+    }
+
+    .social-list {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $textGrey;
+      flex-basis: 45%;
+
+      .social {
+        display: flex;
+        margin-top: 23px;
+        gap: 4%;
+
+        .social-item {
+          background: $textGrey;
+          border-radius: 999px;
+          width: 48px;
+          height: 48px;
+          text-align: center;
+          position: relative;
+
+          &:hover {
+            background: $azure;
+          }
+
+          .icon {
+            vertical-align: center;
+            transform: translate(0, 50%);
+            svg {
+
+              use {
+
+              }
+            }
+
+          }
+        }
+
+
+      }
+    }
+  }
+}
+

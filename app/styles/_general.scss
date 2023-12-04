@@ -1,0 +1,97 @@
+$darkBG: #1C1C33;
+$azure: #57D9A6;
+$blueBG: #23233B;
+$red: #FC5468;
+$textGrey: #F6F6F8;
+$darkgrey: #4E4E65;
+
+@mixin heading {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  color: $textGrey;
+  margin: 0;
+  text-transform: capitalize;
+  @media (max-width: 768px) {
+    font-size: 42px;
+    line-height: 47px;
+  }
+  @media (max-width: 600px) {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  @media (max-width: 480px) {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+.button {
+  line-height: 27px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1C1C33;
+  background: $azure;
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 48px;
+  @media (max-width: 1024px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 24px;
+  }
+  @media (max-width: 480px) {
+    margin: 20px auto;
+    display: block;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+  }
+
+}
+
+@mixin line {
+  width: 150px;
+  border-bottom: $azure solid 2px;
+  align-self: center;
+}
+@mixin text{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  margin: 0;
+}
+@mixin link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $azure;
+  text-decoration: none;
+}
+@mixin span {
+  color: $darkgrey;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #F6F6F8;
+  font-size: 18px;
+}
+body {
+  margin: 0;
+
+}
